@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Table</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <section class="navigations">
-        <h2>1. Навігація</h2>
-        <div class="menu-1">
-            <ul class="menu">
+    <div class="wrapper">
+        <section class="navigations">
+            <h2>1. Навігація</h2>
+            <ul class="menu menu-1 menu-container">
                 <li>
                     <a href="#">Ковбаса</a>
                     <ul class="submenu">
@@ -51,9 +52,7 @@
                     </ul>
                 </li>
             </ul>
-        </div>
-        <div class="menu-2">
-            <ul class="menu">
+            <ul class="menu menu-2 menu-container">
                 <li><a href="#">Ноутбук</a></li>
                 <li><a href="#">Телефон</a></li>
                 <li>
@@ -76,20 +75,17 @@
                                         <li><a href="#">Без дверей</a></li>
                                     </ul>
                                 </li>
-
                             </ul>
                         </li>
                         <li><a href="#">6-х камерні</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Товари для дорослих та дітей</a></li>
+                <li class="grow"><a href="#">Товари для дорослих та дітей</a></li>
                 <li><a href="#">Різне</a></li>
             </ul>
-        </div>
-        <div class="menu-3">
-            <div class="container">
-                <ul class="menu">
-                    <li><a href="#">Головна</a></li>
+            <div class="menu-container">
+                <ul class="menu menu-3">
+                    <li><a href="#"><i class="icon icon-home"></i>Головна</a></li>
                     <li>
                         <a href="#">Про село</a>
                         <ul class="submenu">
@@ -101,14 +97,16 @@
                     </li>
                     <li>
                         <a href="#">Наші послуги</a>
-                        <ul class="submenu">
-                            <li><a href="#">Видоїти корову</a></li>
-                            <li><a href="#">Випасти свиню</a></li>
-                            <li><a href="#">Принести води</a></li>
-                            <li><a href="#">Прибрати подвір’я</a></li>
-                            <li><a href="#">Покропити город</a></li>
-                            <li><a href="#">Крамниця товарів</a></li>
-                        </ul>
+                        <div>
+                            <ul class="submenu submenu-col">
+                                <li><a href="#">Видоїти корову</a></li>
+                                <li><a href="#">Випасти свиню</a></li>
+                                <li><a href="#">Принести води</a></li>
+                                <li><a href="#">Прибрати подвір’я</a></li>
+                                <li><a href="#">Покропити город</a></li>
+                                <li><a href="#">Крамниця товарів</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <a href="#">Краєвид околиці</a>
@@ -123,138 +121,137 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="social">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                <ul class="menu-3__social">
+                    <li><a class="icon icon-fb" href="#"></a></li>
+                    <li><a class="icon icon-tw" href="#"></a></li>
+                    <li><a class="icon icon-inst" href="#"></a></li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="table">
+            <h2>2. Таблиця</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">№</th>
+                        <th rowspan="2">Ім’я</th>
+                        <th colspan="3">Результати</th>
+                    </tr>
+                    <tr>
+                        <th>2016</th>
+                        <th>2017</th>
+                        <th>2018</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Джон Федор</td>
+                        <td>55,2</td>
+                        <td>71,4</td>
+                        <td>33,7</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Віль’ям Шекспір</td>
+                        <td>55,2</td>
+                        <td>71,4</td>
+                        <td>33,7</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Джон Федор</td>
+                        <td>55,2</td>
+                        <td>71,4</td>
+                        <td>33,7</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Джон Федор</td>
+                        <td>55,2</td>
+                        <td>71,4</td>
+                        <td>33,7</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Джон Федор</td>
+                        <td>55,2</td>
+                        <td>71,4</td>
+                        <td>33,7</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Джон Федор</td>
+                        <td>55,2</td>
+                        <td>71,4</td>
+                        <td>33,7</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Джон Федор</td>
+                        <td>55,2</td>
+                        <td>71,4</td>
+                        <td>33,7</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>Джон Федор</td>
+                        <td>55,2</td>
+                        <td>71,4</td>
+                        <td>33,7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="table-css">
+            <h2>3. Таблиця стилями</h2>
+            <div class="table">
+                <div>
+                    <span>№</span>
+                    <span>Назва товару</span>
+                    <span>CPU</span>
+                    <span>SSD</span>
+                    <span>GPU</span>
+                </div>
+                <div>
+                    <span>1.</span>
+                    <span>Настільний iMac</span>
+                    <span>i-7</span>
+                    <span>256</span>
+                    <span>16</span>
+                </div>
+                <div>
+                    <span>2.</span>
+                    <span>Ноутбук MacBook Pro 2015</span>
+                    <span>i-7</span>
+                    <span>256</span>
+                    <span>16</span>
+                </div>
+                <div>
+                    <span>3.</span>
+                    <span>Смартфон Samsung</span>
+                    <span>i-7</span>
+                    <span>256</span>
+                    <span>16</span>
+                </div>
+                <div>
+                    <span>4.</span>
+                    <span>Телевізор Philips</span>
+                    <span>i-7</span>
+                    <span>256</span>
+                    <span>16</span>
+                </div>
+                <div>
+                    <span>5.</span>
+                    <span>Годинник Asahi</span>
+                    <span>i-7</span>
+                    <span>256</span>
+                    <span>16</span>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <section class="table">
-        <h2>2. Таблиця</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th rowspan="2">№</th>
-                    <th rowspan="2">Ім’я</th>
-                    <th colspan="3">Результати</th>
-                </tr>
-                <tr>
-                    <th>2016</th>
-                    <th>2017</th>
-                    <th>2018</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1.</td>
-                    <td>Джон Федор</td>
-                    <td>55,2</td>
-                    <td>71,4</td>
-                    <td>33,7</td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>Віль’ям Шекспір</td>
-                    <td>55,2</td>
-                    <td>71,4</td>
-                    <td>33,7</td>
-                </tr>
-                <tr>
-                    <td>3.</td>
-                    <td>Джон Федор</td>
-                    <td>55,2</td>
-                    <td>71,4</td>
-                    <td>33,7</td>
-                </tr>
-                <tr>
-                    <td>4.</td>
-                    <td>Джон Федор</td>
-                    <td>55,2</td>
-                    <td>71,4</td>
-                    <td>33,7</td>
-                </tr>
-                <tr>
-                    <td>5.</td>
-                    <td>Джон Федор</td>
-                    <td>55,2</td>
-                    <td>71,4</td>
-                    <td>33,7</td>
-                </tr>
-                <tr>
-                    <td>6.</td>
-                    <td>Джон Федор</td>
-                    <td>55,2</td>
-                    <td>71,4</td>
-                    <td>33,7</td>
-                </tr>
-                <tr>
-                    <td>7.</td>
-                    <td>Джон Федор</td>
-                    <td>55,2</td>
-                    <td>71,4</td>
-                    <td>33,7</td>
-                </tr>
-                <tr>
-                    <td>8.</td>
-                    <td>Джон Федор</td>
-                    <td>55,2</td>
-                    <td>71,4</td>
-                    <td>33,7</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section class="table-css">
-        <h2>3. Таблиця стилями</h2>
-        <div class="table">
-            <div>
-                <span>№</span>
-                <span>Назва товару</span>
-                <span>CPU</span>
-                <span>SSD</span>
-                <span>GPU</span>
-            </div>
-            <div>
-                <span>1.</span>
-                <span>Настільний iMac</span>
-                <span>i-7</span>
-                <span>256</span>
-                <span>16</span>
-            </div>
-            <div>
-                <span>2.</span>
-                <span>Ноутбук MacBook Pro 2015</span>
-                <span>i-7</span>
-                <span>256</span>
-                <span>16</span>
-            </div>
-            <div>
-                <span>3.</span>
-                <span>Смартфон Samsung</span>
-                <span>i-7</span>
-                <span>256</span>
-                <span>16</span>
-            </div>
-            <div>
-                <span>4.</span>
-                <span>Телевізор Philips</span>
-                <span>i-7</span>
-                <span>256</span>
-                <span>16</span>
-            </div>
-            <div>
-                <span>5.</span>
-                <span>Годинник Asahi</span>
-                <span>i-7</span>
-                <span>256</span>
-                <span>16</span>
-            </div>
-        </div>
-    </section>
 </body>
 
 </html>
